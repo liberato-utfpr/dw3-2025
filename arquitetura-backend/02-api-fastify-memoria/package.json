@@ -1,17 +1,17 @@
 {
-  "name": "api-rest",
+  "name": "02-api-fastify-memoria",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
+    "start": "node ./src/server.js",
+    "dev": "node --watch ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "fastify": "^5.5.0"
   }
 }

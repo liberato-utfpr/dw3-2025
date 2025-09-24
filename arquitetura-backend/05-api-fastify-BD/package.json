@@ -1,5 +1,5 @@
 {
-  "name": "api-fastify",
+  "name": "04-api-fastify-memoria-vertical-slicing",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",

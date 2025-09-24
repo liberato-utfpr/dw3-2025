@@ -3,13 +3,13 @@ import { ContatoService } from './contato.service.js';
 
 export class ContatoController {
 
-  constructor() {
-    this.contatoService = new ContatoService();
+  // Agora o Controller RECEBE o serviço.
+  constructor(contatoService) {
+    this.contatoService = contatoService;
   }
 
   // Método para lidar com a busca de todos os contatos
   async findAll(request, reply) {
-    console.log('ContatoController.findAll chamado');
     try {
       const contatos = await this.contatoService.findAll();
       return reply.status(200).send(contatos);

@@ -1,13 +1,11 @@
-import { ContatoRepository } from "./contato.repository.js";
 
 
 export class ContatoService {
-  constructor() {
-    this.contatoRepository = new ContatoRepository();
+  constructor(contatoRepository) {
+    this.contatoRepository = contatoRepository;
   }
 
   async findAll() {
-    console.log('ContatoService.findAll chamado');
     return this.contatoRepository.findAll();
   }
 
@@ -53,7 +51,5 @@ export class ContatoService {
 
     return this.contatoRepository.delete(id);
   }
-
-  
 
 }
